@@ -1,6 +1,7 @@
 ### Поиск повторяющихся строк
 
 ![dup1](https://github.com/unixlinuxgeek/The_Go_Programming_Language/ch1/dup1/dup1.go)
+
 ```
 %d              Десятичное число
 %x, %o, %b      Целое в шестнадцатеричном, восьмеричном и двоичных представлениях.
