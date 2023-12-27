@@ -1,3 +1,5 @@
+// Упражнение 8.3
+
 package main
 
 import (
