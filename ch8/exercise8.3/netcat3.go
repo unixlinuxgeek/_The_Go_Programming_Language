@@ -8,11 +8,8 @@ import (
 )
 
 func main() {
-
-	//var tcpConn net.TCPConn
-	conn, err := net.Dial("tcp", "localhost:8000")
-	//tcpConn = conn.
-	//tcpConn.CloseRead()
+	tcpAdr, _ := net.ResolveTCPAddr("tcp", "localhost:8000")
+	conn, err := net.DialTCP("tcp", nil, tcpAdr)
 
 	if err != nil {
 		log.Fatal(err)
@@ -25,7 +22,7 @@ func main() {
 
 	}()
 	mustCopy(conn, os.Stdin)
-	conn.Close()
+	conn.CloseWrite()
 	<-done
 	// Ожидание завершения фоновой go-подпрограммы
 }
