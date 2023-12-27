@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	tcpAdr, _ := net.ResolveTCPAddr("tcp", "localhost:8000")
+	tcpAdr, _ := net.ResolveTCPAddr("tcp", "localhost:8001")
 	conn, err := net.DialTCP("tcp", nil, tcpAdr)
 
 	if err != nil {
