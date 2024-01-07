@@ -1,3 +1,5 @@
+// Open file if not exist, or create new file.
+
 package main
 
 import (
