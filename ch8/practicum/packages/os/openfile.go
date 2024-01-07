@@ -15,8 +15,8 @@ func main() {
 		if err != nil {
 			fmt.Errorf("%s\n", err)
 		}
-		fmt.Println("File open")
-	} else {
 		fmt.Println("File created")
+	} else {
+		fmt.Println("File open")
 	}
 }
